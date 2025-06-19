@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
           self.present(alert, animated: true)
           alert.addAction(UIAlertAction(title: "OK", style: .default))
         } else {
-          self.performSegue(withIdentifier: "LoginToChat", sender: self)
+          self.performSegue(withIdentifier: K.loginSegue, sender: self)
         }
       }
     }
